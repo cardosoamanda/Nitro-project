@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Projeto - NITRO</title>
+</head>
+
+<body> <img src="./assets/logo.png" class="n-logoimg" title="logo" />
+    <div class="n-maintitle">Consulte sua encomenda:</div>
+    <div class="n-request"> <input type="text" placeholder="Digite o número do pedido" class="n-search" id="search">
+        <button type="submit" class="n-button" onclick=""><img src="./assets/lupa.png" class="n-searchimg"
+                title="search-img" /> </button> </div>
+    <div id="sucesso" class="n-container">
+        <div class="n-first-row">
+            <div>
+                <h1 id="nome" class="n-bigtext"></h1>
+                <h3 class="n-smalltext">Número de ordem e nome do cliente</h3>
+            </div>
+            <div>
+                <h1 id="valor" class="n-bigtext n-small-view"></h1>
+                <h3 class="n-smalltext n-small-view">Valor</h3>
+            </div>
+        </div>
+        <div class="n-second-row">
+            <div>
+                <h1 id="data" class="n-bigtext"></h1>
+                <h3 class="n-smalltext">Data do pedido</h3>
+            </div>
+            <div>
+                <h1 id="status" class="n-bigtext"></h1>
+                <h3 class="n-smalltext">Situação da encomenda</h3>
+            </div>
+        </div>
+    </div>
+    <div id="n-error-message"> Encomenda <br>não encontrada! <p>Procure novamente!</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
